@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insan Kamil Dombasti | Premium Livestock Nganjuk</title>
+
+    <meta name="title" content="Insan Kamil Dombasti | Premium Livestock Nganjuk">
+    <meta name="description" content="Pilihan Berkah Untuk Ibadah Anda. Melayani Aqiqah Syar'i, Hewan Qurban, dan Bibit Bakalan di Nganjuk.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Insan Kamil Dombasti - Aqiqah & Qurban Premium">
+    <meta property="og:description" content="Domba unggulan dengan perawatan premium dan pakan organik di Nganjuk.">
+    <meta property="og:image" content="domba.jpeg"> 
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fdfbf7; }
+        .gold-text { background: linear-gradient(to right, #d4af37, #f1d27b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .btn-gold { background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%); transition: all 0.3s ease; color: white !important; }
+        .btn-gold:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(184, 134, 11, 0.4); }
+        .nav-link { position: relative; transition: color 0.3s; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: #d4af37; transition: width 0.3s; }
+        .nav-link:hover::after { width: 100%; }
+        .nav-link:hover { color: #f1d27b !important; }
+        .islamic-pattern { background-image: url('https://www.transparenttextures.com/patterns/islamic-art.png'); opacity: 0.1; }
+        .glass-table { background: rgba(255, 255, 255, 0.8); backdrop-blur: 10px; border: 1px solid rgba(212, 175, 55, 0.2); }
+        @keyframes slideIn { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        .animate-chat { animation: slideIn 0.4s ease-out forwards; }
+        .map-container { filter: grayscale(1) invert(0.9) contrast(1.2); transition: all 0.5s; }
+        .map-container:hover { filter: grayscale(0) invert(0) contrast(1); }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <div class="fixed bottom-6 right-6 z-[999] flex flex-col items-end">
+        <div id="wa-widget" class="hidden mb-4 animate-chat">
+            <div class="bg-white w-72 rounded-2xl shadow-2xl overflow-hidden border border-emerald-100">
+                <div class="bg-emerald-900 p-4 text-white flex items-center gap-3">
+                    <div class="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center text-emerald-900"><i class="fas fa-sheep"></i></div>
+                    <div>
+                        <p class="font-bold text-sm leading-tight">Admin Insan Kamil</p>
+                        <p class="text-[10px] text-emerald-200 uppercase tracking-widest font-bold">Online (Balas Cepat)</p>
+                    </div>
+                </div>
+                <div class="p-4 bg-gray-50 text-sm text-gray-700">
+                    <p class="bg-white p-3 rounded-lg shadow-sm border border-gray-100 mb-2">Assalamu'alaikum! Selamat datang di Insan Kamil Dombasti. Ada yang bisa kami bantu mengenai Aqiqah atau Qurban?</p>
+                </div>
+                <div class="p-3 bg-white border-t">
+                    <a href="https://wa.me/6289673826527?text=Assalamua'laikum%20Admin,%20saya%20ingin%20tanya%20mengenai%20layanan%20Insan%20Kamil" target="_blank"
+                       class="block bg-green-500 text-white text-center py-2.5 rounded-xl font-bold text-sm hover:bg-green-600 transition">
+                       <i class="fab fa-whatsapp mr-2"></i> Mulai Chat Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+        <button onclick="toggleChat()" class="bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl animate-bounce hover:scale-110 transition">
+            <i class="fab fa-whatsapp"></i>
+        </button>
+    </div>
+
+    <nav id="navbar" class="fixed w-full z-[100] transition-all duration-300 bg-[#064e3b]/95 backdrop-blur-md py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-amber-500 p-2 rounded-lg shadow-lg"><i class="fas fa-sheep text-emerald-900 text-xl"></i></div>
+                <div class="leading-none text-white">
+                    <span class="text-xl font-extrabold block tracking-tight">INSAN KAMIL</span>
+                    <span class="text-[10px] font-bold text-amber-400 tracking-[0.3em]">DOMBASTI NGANJUK</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-10 text-sm">
+                <a href="#beranda" class="nav-link text-gray-200 font-medium">Beranda</a>
+                <a href="#layanan" class="nav-link text-gray-200 font-medium">Layanan</a>
+                <a href="#harga" class="nav-link text-gray-200 font-medium">Daftar Harga</a>
+                <a href="#testimoni" class="nav-link text-gray-200 font-medium">Testimoni</a>
+                <a href="#lokasi" class="nav-link text-gray-200 font-medium">Lokasi</a>
+                <a href="javascript:void(0)" onclick="toggleChat()" class="btn-gold px-7 py-2.5 rounded-full font-bold shadow-lg">Pesan Sekarang</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-white text-2xl"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-emerald-950 p-6 absolute w-full shadow-2xl border-t border-emerald-800">
+            <div class="flex flex-col space-y-4">
+                <a href="#beranda" class="text-white font-medium hover:text-amber-400">Beranda</a>
+                <a href="#layanan" class="text-white font-medium hover:text-amber-400">Layanan</a>
+                <a href="#harga" class="text-white font-medium hover:text-amber-400">Daftar Harga</a>
+                <a href="#lokasi" class="text-white font-medium hover:text-amber-400">Lokasi</a>
+                <a href="javascript:void(0)" onclick="toggleChat()" class="btn-gold text-center py-3 rounded-xl font-bold">WhatsApp Kami</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="beranda" class="relative pt-32 pb-20 lg:pt-48 lg:pb-40 overflow-hidden bg-[#064e3b]">
+        <div class="absolute inset-0 islamic-pattern"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 text-center lg:text-left text-white" data-aos="fade-right">
+                    <h2 class="inline-block py-2 px-5 rounded-full bg-white/10 border border-amber-500/30 text-amber-400 text-sm font-bold mb-6 italic">🕋 Marhaban di Insan Kamil Dombasti</h2>
+                    <h1 class="text-5xl lg:text-7xl font-extrabold leading-[1.1] mb-8 tracking-tight">Pilihan Berkah Untuk <span class="gold-text">Ibadah Anda</span></h1>
+                    <p class="text-lg text-emerald-100/80 mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed">Kami menyediakan domba unggulan dengan perawatan premium di Nganjuk. Siap melayani Aqiqah, Qurban, dan kebutuhan bibit berkualitas sesuai syariah.</p>
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 font-bold">
+                        <a href="#layanan" class="btn-gold px-10 py-4 rounded-2xl shadow-2xl text-center">Jelajahi Layanan</a>
+                        <button onclick="toggleChat()" class="bg-white/10 hover:bg-white/20 border border-white/20 px-10 py-4 rounded-2xl transition backdrop-blur-md text-center text-white">Konsultasi Gratis</button>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative" data-aos="zoom-in">
+                    <div class="absolute -inset-4 bg-amber-500/30 rounded-full blur-3xl opacity-50"></div>
+                    <img src="domba.jpeg" class="relative rounded-[3rem] border-8 border-white/10 shadow-2xl transform lg:rotate-3 hover:rotate-0 transition duration-700 w-full h-[450px] object-cover" alt="Domba Unggulan">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-emerald-950 border-y border-amber-500/20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center" data-aos="fade-up">
+                    <div class="text-3xl lg:text-4xl font-extrabold text-amber-400">500+</div>
+                    <div class="text-xs text-emerald-200 uppercase tracking-widest mt-2 font-bold">Pelanggan Puas</div>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-3xl lg:text-4xl font-extrabold text-amber-400">100%</div>
+                    <div class="text-xs text-emerald-200 uppercase tracking-widest mt-2 font-bold">Sesuai Syari'at</div>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-3xl lg:text-4xl font-extrabold text-amber-400">Free</div>
+                    <div class="text-xs text-emerald-200 uppercase tracking-widest mt-2 font-bold">Ongkir Nganjuk</div>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-3xl lg:text-4xl font-extrabold text-amber-400">Premium</div>
+                    <div class="text-xs text-emerald-200 uppercase tracking-widest mt-2 font-bold">Pakan Organik</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="layanan" class="py-24">
+        <div class="container mx-auto px-6 text-center mb-16" data-aos="fade-up">
+            <span class="text-amber-600 font-extrabold tracking-widest text-sm uppercase">Layanan Kami</span>
+            <h2 class="text-4xl lg:text-5xl font-extrabold text-emerald-950 mt-2 tracking-tight">Segala Kebutuhan Domba Anda</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 container mx-auto px-6">
+            <div class="group bg-white p-10 rounded-[2.5rem] shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col items-center" data-aos="fade-up">
+                <div class="w-20 h-20 bg-emerald-50 rounded-3xl flex items-center justify-center mb-8 group-hover:bg-emerald-900 transition-colors duration-500">
+                    <i class="fas fa-hand-holding-heart text-3xl text-emerald-700 group-hover:text-white"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-emerald-950 mb-4">Aqiqah Syar'i</h3>
+                <p class="text-gray-500 leading-relaxed mb-6 text-center text-sm">Paket lengkap matang sesuai sunnah dengan sertifikat aqiqah gratis dan dokumentasi penyembelihan.</p>
+                <button onclick="toggleChat()" class="mt-auto font-bold text-emerald-700 border-b-2 border-amber-500 pb-1">Detail Paket</button>
+            </div>
+            <div class="group bg-emerald-900 p-10 rounded-[2.5rem] shadow-2xl text-white transform md:-translate-y-6 relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                <div class="absolute -right-10 -top-10 w-40 h-40 bg-white/5 rounded-full"></div>
+                <div class="w-20 h-20 bg-amber-500 rounded-3xl flex items-center justify-center mb-8 shadow-xl">
+                    <i class="fas fa-mosque text-3xl text-emerald-900"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-amber-400 mb-4">Hewan Qurban</h3>
+                <p class="text-emerald-100/70 leading-relaxed mb-6 text-sm">Stok domba sehat, gemuk, cukup umur, dan tidak cacat untuk hari raya Idul Adha Anda yang penuh berkah.</p>
+                <button onclick="toggleChat()" class="mt-auto font-bold text-white bg-white/10 px-8 py-3 rounded-xl border border-white/20 hover:bg-white/20 transition">Pesan Sekarang</button>
+            </div>
+            <div class="group bg-white p-10 rounded-[2.5rem] shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col items-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-20 h-20 bg-emerald-50 rounded-3xl flex items-center justify-center mb-8 group-hover:bg-emerald-900 transition-colors duration-500">
+                    <i class="fas fa-sheep text-3xl text-emerald-700 group-hover:text-white"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-emerald-950 mb-4">Jual Bakalan</h3>
+                <p class="text-gray-500 leading-relaxed mb-6 text-center text-sm">Menyediakan bibit unggul jenis Merino, Texel, & Lokal untuk kebutuhan penggemukan para mitra peternak.</p>
+                <button onclick="toggleChat()" class="mt-auto font-bold text-emerald-700 border-b-2 border-amber-500 pb-1">Info Stok</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="harga" class="py-24 bg-emerald-50/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-extrabold text-emerald-950 mb-4">Daftar Paket Aqiqah</h2>
+                <p class="text-gray-600 italic">"Kualitas Premium, Harga Nganjuk"</p>
+            </div>
+            <div class="max-w-5xl mx-auto overflow-hidden rounded-[2rem] shadow-2xl glass-table" data-aos="zoom-in">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead class="bg-emerald-900 text-amber-400">
+                            <tr>
+                                <th class="p-6 uppercase tracking-wider text-sm font-bold">Tipe Paket</th>
+                                <th class="p-6 uppercase tracking-wider text-sm font-bold text-center">Fasilitas</th>
+                                <th class="p-6 uppercase tracking-wider text-sm font-bold">Harga</th>
+                                <th class="p-6 uppercase tracking-wider text-sm font-bold text-center">Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-amber-100">
+                            <tr class="hover:bg-white transition">
+                                <td class="p-6"><div class="font-bold text-emerald-950">Paket Hemat</div><div class="text-xs text-gray-500 mt-1 italic font-bold">Domba Betina</div></td>
+                                <td class="p-6 text-sm text-gray-600">60 Box Nasi, Olahan Sate/Gulai, Sertifikat, Dokumentasi.</td>
+                                <td class="p-6 font-extrabold text-emerald-700">Rp 2.450k</td>
+                                <td class="p-6 text-center"><button onclick="toggleChat()" class="bg-emerald-100 text-emerald-900 px-5 py-2 rounded-full font-bold text-xs hover:bg-emerald-900 hover:text-white transition uppercase">Pilih</button></td>
+                            </tr>
+                            <tr class="bg-amber-500/5 hover:bg-white transition">
+                                <td class="p-6 border-l-4 border-amber-500"><div class="font-bold text-emerald-950">Paket Premium</div><div class="text-[10px] text-amber-600 mt-1 font-black uppercase tracking-widest">Favorit</div></td>
+                                <td class="p-6 text-sm text-gray-600 font-medium">85 Box Nasi, Olahan Premium, Souvenir, Sertifikat, Dokumentasi.</td>
+                                <td class="p-6 font-extrabold text-emerald-700 text-lg">Rp 3.700k</td>
+                                <td class="p-6 text-center"><button onclick="toggleChat()" class="btn-gold px-6 py-2 rounded-full font-bold text-xs shadow-md uppercase">Ambil</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimoni" class="py-24 bg-white border-y border-gray-100 overflow-hidden">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-4xl font-extrabold text-emerald-950 mb-8 leading-tight">Kepercayaan Pelanggan <br>Adalah Amanah Kami</h2>
+                <div class="p-10 bg-emerald-50 rounded-[2.5rem] relative border border-emerald-100 shadow-sm">
+                    <i class="fas fa-quote-left text-5xl text-emerald-200 absolute top-6 right-8 opacity-50"></i>
+                    <p class="text-lg italic text-emerald-900 mb-8 leading-relaxed relative z-10">"MasyaAllah, aqiqah di Insan Kamil Dombasti sangat praktis. Masakannya enak, dombanya gemuk dan sehat. Sangat terbantu dengan dokumentasi penyembelihannya."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 bg-emerald-900 rounded-full flex items-center justify-center text-white text-xl font-bold">AH</div>
+                        <div>
+                            <p class="font-bold text-emerald-950 text-lg leading-tight">Bpk. Ahmad Hidayat</p>
+                            <p class="text-[10px] text-emerald-600 font-black uppercase tracking-widest mt-1">Tokoh Masyarakat - Nganjuk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4" data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1524024973431-2ad916746881?q=80&w=400" class="rounded-2xl shadow-lg h-56 w-full object-cover grayscale hover:grayscale-0 transition duration-700">
+                <img src="istockphoto-645788690-612x612.jpg" class="rounded-2xl shadow-lg h-56 w-full object-cover translate-y-8 grayscale hover:grayscale-0 transition duration-700">
+            </div>
+        </div>
+    </section>
+
+    <section id="lokasi" class="py-24 bg-emerald-50/30">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/3" data-aos="fade-right">
+                    <span class="text-amber-600 font-extrabold tracking-widest text-xs uppercase">Lokasi Kami</span>
+                    <h2 class="text-4xl font-extrabold text-emerald-950 mt-2 mb-6">Kunjungi Kandang Kami</h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed">Silahkan datang langsung untuk memilih domba terbaik Anda. Kami terbuka untuk kunjungan setiap hari pada jam operasional.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-4 bg-white rounded-2xl border border-emerald-100 shadow-sm">
+                            <i class="fas fa-map-marker-alt text-amber-600 mt-1"></i>
+                            <div><p class="font-bold text-emerald-950">Alamat</p><p class="text-sm text-gray-500">Jl. Raya Nganjuk - Kediri, Kab. Nganjuk, Jawa Timur</p></div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 bg-white rounded-2xl border border-emerald-100 shadow-sm">
+                            <i class="fas fa-clock text-amber-600 mt-1"></i>
+                            <div><p class="font-bold text-emerald-950">Jam Operasional</p><p class="text-sm text-gray-500">Senin - Minggu (08:00 - 17:00 WIB)</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-2/3 w-full h-[450px] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white" data-aos="zoom-in">
+                    <iframe class="w-full h-full map-container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126588.35821034323!2d111.83852026131418!3d-7.611226768393566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e784bf20023477b%3A0x3027a7635292720!2sNganjuk%20Regency%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-emerald-950 text-white pt-20 pb-10 border-t-4 border-amber-500">
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-12 mb-20 text-center md:text-left">
+            <div>
+                <h3 class="text-2xl font-bold text-amber-400 mb-6 tracking-tighter">INSAN KAMIL DOMBASTI</h3>
+                <p class="text-emerald-100/60 leading-relaxed text-sm">Pusat Peternakan Domba Modern Nganjuk. Menjamin kualitas hewan ternak yang amanah, sehat, dan sesuai kaidah syar'i.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-6 uppercase tracking-widest text-xs">Menu Cepat</h4>
+                <div class="flex flex-col space-y-3 text-sm text-emerald-100/60 font-medium">
+                    <a href="#beranda" class="hover:text-amber-400">Beranda</a>
+                    <a href="#layanan" class="hover:text-amber-400">Layanan</a>
+                    <a href="#harga" class="hover:text-amber-400">Daftar Paket</a>
+                    <a href="#lokasi" class="hover:text-amber-400">Cek Lokasi Kandang</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-6 uppercase tracking-widest text-xs">Hubungi Kami</h4>
+                <div class="flex justify-center md:justify-start space-x-6 text-xl mb-6">
+                    <a href="https://wa.me/6289673826527" class="text-emerald-300 hover:text-amber-400 transition"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="text-emerald-300 hover:text-amber-400 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-emerald-300 hover:text-amber-400 transition"><i class="fab fa-facebook"></i></a>
+                </div>
+                <p class="text-[10px] text-emerald-500 font-black uppercase tracking-[0.2em]">0896-7382-6527</p>
+                <p class="text-emerald-100/40 text-[10px] mt-2 italic">Barakallahu fikum.</p>
+            </div>
+        </div>
+        <div class="text-center pt-10 border-t border-white/5 text-[10px] tracking-[0.4em] text-emerald-700 font-black uppercase">© 2026 INSAN KAMIL DOMBASTI NGANJUK.</div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true, offset: 100 });
+        
+        function toggleChat() { 
+            document.getElementById('wa-widget').classList.toggle('hidden'); 
+        }
+
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'shadow-2xl');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-2', 'shadow-2xl');
+            }
+        });
+    </script>
+</body>
+</html>
